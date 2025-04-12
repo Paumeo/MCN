@@ -2,41 +2,97 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>MCN - La Malédiction du Cristal Noir</title>
+  <title>La Malédiction du Cristal Noir</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Great+Vibes&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
-      background-image: url('https://images.unsplash.com/photo-1523961131990-5ea7c61b2107');
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #000000, #1a1a1a);
       background-size: cover;
-      background-position: center;
-      height: 100vh;
-      color: white;
+      color: #f0f0f0;
+      font-family: 'Playfair Display', serif;
       text-align: center;
-      font-family: 'Georgia', serif;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at center, rgba(255,255,200,0.15), rgba(0,0,0,0.8));
+      z-index: 0;
     }
 
     .hero {
-      padding-top: 20%;
-      background-color: rgba(0,0,0,0.5);
-      height: 100%;
+      position: relative;
+      z-index: 1;
+      top: 30%;
+      transform: translateY(-30%);
+      padding: 20px;
     }
 
     h1 {
-      font-size: 3em;
-      text-shadow: 2px 2px 8px black;
+      font-family: 'Great Vibes', cursive;
+      font-size: 4em;
+      color: #ff914d;
+      text-shadow: 0 0 15px rgba(255, 140, 0, 0.6);
+      margin-bottom: 0.2em;
     }
 
-    p {
-      font-size: 1.2em;
+    p.subtitle {
+      font-size: 1.3em;
       font-style: italic;
+      color: #b4f0a7;
+      margin-bottom: 2em;
+    }
+
+    .hero-button {
+      padding: 15px 30px;
+      background: #222;
+      color: #f0f0f0;
+      border: 1px solid #4caf50;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1em;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .hero-button:hover {
+      background-color: #4caf50;
+      color: #000;
+    }
+
+    .chouette {
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      width: 100px;
+      opacity: 0.8;
+      animation: flame 4s infinite ease-in-out;
+    }
+
+    @keyframes flame {
+      0%, 100% { transform: scale(1) rotate(0deg); }
+      50% { transform: scale(1.05) rotate(2deg); }
     }
   </style>
 </head>
 <body>
+  <div class="overlay"></div>
   <div class="hero">
     <h1>La Malédiction du Cristal Noir</h1>
-    <p>Un monde en ruine, une nature en colère, un espoir fragile...</p>
+    <p class="subtitle">Un monde éteint. Une lumière renaît. Les esprits de la nature se réveillent...</p>
+    <a href="#" class="hero-button">Découvrir l'univers</a>
   </div>
+  <img src="https://i.imgur.com/ECqkGJ2.png" alt="Chouette de feu" class="chouette">
 </body>
 </html>
