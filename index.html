@@ -85,6 +85,95 @@
       50% { transform: scale(1.05) rotate(2deg); }
     }
   </style>
+  <!-- Menu de navigation -->
+<header>
+  <nav>
+    <ul>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#universe">L'univers</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Section À propos de l’auteur -->
+<section id="about">
+  <h2>À propos de l’auteur</h2>
+  <p>Je suis l’auteur de "La Malédiction du Cristal Noir", un voyage au cœur d'un monde apocalyptique où la nature et les créatures fantastiques sont les dernières forces à lutter contre la fin du monde...</p>
+</section>
+
+<!-- Section L'univers -->
+<section id="universe">
+  <h2>L'univers du livre</h2>
+  <p>Un monde dévasté, peuplé d'animaux fantastiques : des créatures élémentaires, comme la chouette de feu, apportent l’espoir au milieu de la ruine. Un livre où la magie se mêle à la survie, et où l'humanité doit trouver sa place parmi les forces naturelles qui régissent tout.</p>
+</section>
+
+<!-- Section Contact (si besoin) -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Si vous souhaitez en savoir plus sur le livre, ou pour toute question, n'hésitez pas à me contacter !</p>
+  <a href="mailto:contact@paumeo.com">Envoyer un message</a>
+</section>
+
+<!-- Ajout du style pour le menu -->
+<style>
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #111;
+    padding: 10px 0;
+    z-index: 100;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 0 20px;
+  }
+
+  nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    color: #ff914d;
+  }
+
+  section {
+    padding: 60px 20px;
+    margin-top: 60px;
+  }
+
+  section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff914d;
+  }
+
+  section p {
+    font-size: 1.2em;
+    color: #b4f0a7;
+  }
+
+  #contact a {
+    color: #ff914d;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  #contact a:hover {
+    color: #4caf50;
+  }
+</style>
+
 </head>
 <body>
   <div class="overlay"></div>
